@@ -31,6 +31,7 @@
 <script>
 import types from './type'
 export default {
+  layout: 'default',
   name: 'Exception',
   props: {
     type: {

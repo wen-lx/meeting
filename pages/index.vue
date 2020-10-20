@@ -150,12 +150,10 @@ import { getCaptcha, memberRegister, memberCount } from '../api/api'
 
 @Component
 export default class Home extends Vue {
+  layout: string = 'default'
   private images: Array<string> = [
     require('@/assets/1.png')
   ]
-asyncData () {
-  console.log(22222)
-}
   private form: Form = {
     name: '',
     phone: '',

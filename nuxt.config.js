@@ -1,4 +1,14 @@
 export default {
+  // router
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'exception',
+        path: '*',
+        component: resolve(__dirname, 'pages/result_page/404.vue')
+      })
+    }
+  },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'meeting-nuxt',
