@@ -1,0 +1,27 @@
+{
+  "name": "meeting-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^2.0.0",
+    "@nuxtjs/axios": "^5.12.2",
+    "axios": "^0.20.0",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6",
+    "vant": "^2.10.8",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^9.0.2"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.6",
+    "@nuxt/typescript-build": "^2.0.3",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2"
+  }
+}

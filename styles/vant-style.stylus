@@ -1,0 +1,13 @@
+.van-nav-bar__left
+  top 0
+// 设置form label左对齐（vant label-align 不生效）
+.van-field__label
+  text-align left
+
+// 下拉菜单样式
+.van-dropdown-menu__item
+  justify-content left
+  padding-left 8px
+.van-dropdown-item--down
+  max-width 600px
+  margin 0px auto
