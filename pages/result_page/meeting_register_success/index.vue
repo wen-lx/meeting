@@ -16,20 +16,17 @@
 
 <script>
 export default {
-  // layout: 'default',
+  layout: 'default',
   data () {
-    return {
-      // url: window.location.protocol + '//' + window.location.hostname + ':' + window.location.port
+    return { 
       url: ''
     }
   },
-  // mounted(){
-  //   if (process.client) {
-  //     console.log(111)
-  //     require('external_library')
-  //     console.log(window)
-  //   }
-  // },
+  mounted(){
+    if (process.client) {
+      this.url = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port
+    }
+  },
   methods: {
     copyLink () {
       const el = this.$refs.url
