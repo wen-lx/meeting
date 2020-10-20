@@ -39,19 +39,16 @@ export default {
   modules: [
     '@nuxtjs/axios'
   ],
-  axios: {
-    baseURL: 'http://hzhsdev.seetatech.com:8088'
-  },
-  // modules: [
-  //   '@nuxtjs/axios'
-  // ],
   // axios: {
-  //   proxy: true,
-  //   prefix: '/seeta/register',
+  //   baseURL: 'http://hzhsdev.seetatech.com:8088'
   // },
-  // proxy: {
-  //   '/seeta/register': 'http://hzhsdev.seetatech.com:8088'
-  // },
+  axios: {
+    proxy: true,
+    prefix: '/seeta/register'
+  },
+  proxy: {
+    '/seeta/register': 'http://hzhsdev.seetatech.com:8088'
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

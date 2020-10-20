@@ -235,8 +235,8 @@ asyncData () {
   }
 
   public async getCode (): Promise<void> {
-    // const res = await getCaptcha({ mobile: this.form.phone })
-    const res = await this.$axios.get(`/verify_code?mobile=${this.form.phone}`, { mobile: this.form.phone })
+    const res = await getCaptcha({ mobile: this.form.phone })
+    // const res = await this.$axios.get(`/verify_code?mobile=${this.form.phone}`, { mobile: this.form.phone })
     if (res.data.res === 0) {
       this.$toast.success('发送成功')
       this.delaySeconds = 60
@@ -294,7 +294,7 @@ asyncData () {
       // data.append('attributes', JSON.stringify(array)) 
       // data.append('member_id', this.form.phone)
       // data.append('verify', this.form.captcha)
-      // const res = await this.$axios.post('/enrollment', data, { headers: {'Content-Type': 'multipart/form-data' }})
+      // const res = await this.$axios.post('/enrollment', data)
       if (res.data.res === 0) {
         this.$toast.success('会议报名成功')
         this.$router.push('/result_page/meeting_register_success')
