@@ -342,6 +342,7 @@ export default class Home extends Vue {
 
 <style lang="stylus" scoped>
 .page-wrap
+  align-items center
   .info_wrap
     padding 1rem 2rem
   .mini-desc

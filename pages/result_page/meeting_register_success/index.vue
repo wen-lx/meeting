@@ -1,5 +1,5 @@
 <template>
-  <div class="page-wrap">
+  <div class="page-success">
     <van-sticky>
       <van-nav-bar title="会议报名成功" />
     </van-sticky>
@@ -39,6 +39,9 @@ export default {
 </script>
 
 <style>
+.page-success{
+  width: 100%;
+}
 .input-box{
   z-index: -10;
   opacity: 0;
