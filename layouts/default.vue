@@ -1,7 +1,7 @@
 <template>
   <div class="app">
-    <!-- <Nuxt /> -->
-      <router-view></router-view>
+    <Nuxt />
+      <!-- <router-view></router-view> -->
   </div>
 </template>
 

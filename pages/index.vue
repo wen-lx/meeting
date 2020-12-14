@@ -306,8 +306,8 @@ export default class Home extends Vue {
   public async checkNumberLimit () {
     try {
       const res = await memberCount({
-        meeting_key: '35ebd30d16194113a10b20f36731484c',
-        secret_key: '1ff123d237aa4e968090c8811db8c1fe'
+        meeting_key: this.$store.state.register.meeting_key,
+        secret_key: this.$store.state.register.secret_key
       })
         // let data = new FormData()
         // data.append('meeting_key', '35ebd30d16194113a10b20f36731484c')
