@@ -4,4 +4,4 @@ node_js:
 cache: npm
 script:
   - npm
-  - npm run lint --no-fix && npm run build
+  - npm run build
